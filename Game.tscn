@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://HUD/HUD.gd" type="Script" id=1]
+
+[node name="Game" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="CanvasLayer/HUD"]
+margin_left = 725.0
+margin_right = 1020.0
+margin_bottom = 20.0
+text = "Score:"
+align = 2
+valign = 1
+
+[node name="Lives" type="Label" parent="CanvasLayer/HUD"]
+margin_right = 340.0
+margin_bottom = 20.0
+text = "Lives:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="Label" parent="CanvasLayer/HUD"]
+margin_left = 340.0
+margin_right = 680.0
+margin_bottom = 20.0
+text = "Time:"
+align = 1
